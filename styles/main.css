@@ -1,0 +1,111 @@
+body {
+  background-color: #fff;
+  color: #717171;
+}
+
+section {
+  max-width: 46em;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #000;
+  color: #e7bba8;
+  padding: 2em;
+  padding-bottom: 5em;
+}
+
+
+header::after{
+  content : " ";
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)translateY(20%)rotate(45deg);
+  background-color: #000;
+}
+
+.mywork ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  justify-content: center;
+	padding: 0;
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+}
+
+.mywork ul li {
+  width: 20%;
+  padding: 5px 5px 0px 5px;
+  margin: 10px;
+  border: #717171 0.15em solid;
+}
+
+.mywork img {
+  width: 100%;
+}
+
+footer {
+  background-color: #000;
+  padding: 2em;
+  height: 100px;
+}
+
+.linklist {
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.linklist li {
+  max-width: 10em;
+  padding: 1em;
+  float: left;
+}
+
+.nastyadvert {
+  background-image: url(bodyscape.jpg);
+  min-height: 90vh;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 3em;
+}
+
+.nastyadvert h1 {
+  font-size: 4em;
+  font-family: 'Sacramento', cursive;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.nastyadvert p {
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  color: #ebc8b9;
+}
+
+.nastyadvert .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%)translateX(-50%);
+}
+
+.index.html {
+  text-align: center;
+}
+
+.backtotop {
+  text-align: center;
+  padding-bottom: 2em;
+}
