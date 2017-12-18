@@ -3,6 +3,8 @@ body {
   color: #717171;
 }
 
+ul { padding-left: 0.1em; }
+
 section {
   max-width: 46em;
   margin: 0 auto;
@@ -11,7 +13,7 @@ section {
 header {
   background-color: #000;
   color: #e7bba8;
-  padding: 2em;
+  padding-top: 0.05em;
   padding-bottom: 5em;
 }
 
@@ -27,24 +29,16 @@ header::after{
   background-color: #000;
 }
 
+.mywork {
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
 .mywork ul {
   list-style-type: none;
   display: flex;
   flex-wrap:wrap;
-  padding-top: 3em;
-  padding-bottom: 3em;
   justify-content: center;
-	padding: 0;
-  margin-top: 3em;
-  margin-bottom: 3em;
-
-}
-
-.mywork ul li {
-  width: 20%;
-  padding: 5px 5px 0px 5px;
-  margin: 10px;
-  border: #717171 0.15em solid;
 }
 
 .mywork img {
@@ -57,21 +51,57 @@ footer {
   height: 100px;
 }
 
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.menu li {
+  max-width: 10em;
+  padding: 1em;
+  padding-top: 0;
+}
+
+.menu a {
+  color: white;
+  display: block;
+  line-height: 45px;
+  max-width: 160px;
+}
+
+.menu a:after,
+.menu a:before {
+  border: 1px solid rgba(255, 255, 255, 0);
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+}
+
+.menu a:hover:after,
+.menu a:hover:before {
+  border-color: white;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+  bottom: auto;
+}
+
 .linklist {
   list-style-type: none;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .linklist li {
   max-width: 10em;
   padding: 1em;
-  float: left;
 }
 
 .nastyadvert {
-  background-image: url(bodyscape.jpg);
+  background-image: url(images/bodyscape.jpg);
   min-height: 90vh;
   background-size: cover;
   background-attachment: fixed;
@@ -101,11 +131,30 @@ footer {
   transform: translateY(-50%)translateX(-50%);
 }
 
-.index.html {
-  text-align: center;
-}
-
 .backtotop {
   text-align: center;
   padding-bottom: 2em;
+}
+
+figure {
+  width: 290px;
+  margin: 8px;
+  padding: 0;
+	background: #fff;
+	overflow: hidden;
+  line-height:0;
+  display:table;
+}
+
+figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+figure img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+  opacity: 0.5;
 }
