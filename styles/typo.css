@@ -1,41 +1,78 @@
-header {
+header{
   text-align: center;
 }
 
-p {
-  margin-bottom: 1em;
-  font-family: 'Poiret One', cursive;
+p{
+  font-family: 'EB Garamond', serif;
+  margin: 0 auto;
+  margin-top: 0.5em;
+  text-indent: 25px;
 }
 
-footer {
-  font-family: 'Poiret One', cursive;
+footer{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
-h1, h2, h3, h4 {
-  margin: 0.8em 0 0.2em;
-  font-weight: inherit;
-  line-height: 1.2;
-  font-family: 'Abril Fatface', cursive;
+a:hover{
+  color: #fff;
 }
 
+h1, h2, h3, h4{
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
 
-h1 {font-size: 5.0em;}
+h1{
+  font-size: 4.5em;
+  font-weight: 100;
+  letter-spacing: -2px;
+  padding-top: 1.5em;
+}
 
-h2 {font-size: 3.375em;}
+h1 strong{
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-size: 2.5em;
+  font-weight: 900;
+  padding-top: 0.2em;
+}
 
 h2:hover{
-  color: blue;
+  color: #ADADAD;
 }
 
-h3 {font-size: 2.25em;}
+h3{
+  font-size: 2em;
+  font-weight: 900;
+}
 
-h4 {font-size: 1.5em;}
+header h4{
+  letter-spacing: 5px;
+}
 
-a {
+h4{
+  margin-top: 2px;
+  font-size: 1em;
+  font-weight: 300;
   color: #e7bba8;
+  text-align: center;
+}
+
+a{
+  color: #E5E5E5;
   text-decoration: none;
 }
 
-.backtotop a {
-  color: #717171;
+.backtotop a{
+  color: #ADADAD;
+}
+
+.menu{
+  color: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
